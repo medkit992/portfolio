@@ -7,8 +7,13 @@ const skills = [
   "TypeScript",
   "Node.js",
   "APIs",
-  "UI Design",
+  "Browser Extensions",
 ];
+
+const chromeStoreUrl =
+  "https://chromewebstore.google.com/detail/blackbox-api-visualizer/lcpcamkiogebdpenagfgpolmpfhcfeli";
+const blackboxGitHubUrl =
+  "https://github.com/medkit992/Blackbox-API-Visualizer";
 
 export default function Home() {
   return (
@@ -21,18 +26,17 @@ export default function Home() {
 
           <div className="space-y-5">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-400">
-              Software Developer
+              Full-Stack Software Developer
             </p>
 
             <h1 className="max-w-2xl text-4xl font-black tracking-tight text-white md:text-6xl">
-              I build web applications from the interface to the systems behind them.
+              I build polished applications from the interface to the systems behind them.
             </h1>
 
             <p className="max-w-xl text-lg leading-8 text-slate-300">
-              I’m a software developer focused on building thoughtful,
-              practical web applications with clean interfaces, reliable
-              application logic, and a strong attention to the details that
-              make products feel good to use.
+              I build modern web applications, developer tools, integrations,
+              and automation with a focus on clean interfaces, reliable logic,
+              and software that is straightforward to use and maintain.
             </p>
           </div>
 
@@ -84,7 +88,7 @@ export default function Home() {
                   Focus
                 </p>
                 <p className="mt-2 text-lg font-semibold text-white">
-                  Applications
+                  Full Stack
                 </p>
               </div>
 
@@ -102,7 +106,7 @@ export default function Home() {
                   Approach
                 </p>
                 <p className="mt-2 text-lg font-semibold text-white">
-                  Practical
+                  Product-first
                 </p>
               </div>
             </div>
@@ -113,51 +117,50 @@ export default function Home() {
       <section className="mt-20 grid gap-6 md:grid-cols-2">
         <div className="rounded-3xl border border-white/10 bg-slate-900/60 p-8 shadow-lg shadow-slate-950/30">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-violet-300">
-            Who I am
+            How I build
           </p>
 
           <h2 className="mt-4 text-3xl font-bold text-white">
-            Building software that solves real problems.
+            Product thinking backed by hands-on engineering.
           </h2>
 
           <p className="mt-4 text-base leading-7 text-slate-300">
-            I enjoy taking an idea and turning it into a working application.
-            My interests sit across the stack, from designing interfaces and
-            writing application logic to building APIs and working with the
-            data those applications depend on.
+            I enjoy taking an idea from rough requirements to a working product:
+            shaping the interface, connecting APIs and application logic, and
+            refining the details until the experience feels intentional.
           </p>
 
           <p className="mt-4 text-base leading-7 text-slate-300">
-            I’m especially interested in understanding how the different
-            pieces of software fit together and continually expanding my
-            knowledge of the systems behind the applications I build.
+            My work spans full-stack web applications, developer tooling,
+            integrations, and automation, with an emphasis on maintainable code
+            and practical solutions.
           </p>
         </div>
 
         <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-violet-500/15 to-cyan-500/10 p-8 shadow-lg shadow-slate-950/30">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
-            What I do
+            What I work on
           </p>
 
           <ul className="mt-5 space-y-4 text-slate-200">
             <li className="flex items-start gap-3">
               <span className="mt-1 inline-block size-2.5 shrink-0 rounded-full bg-violet-400" />
-              Build responsive, accessible interfaces for modern web applications.
+              Responsive interfaces and full-stack web applications.
             </li>
 
             <li className="flex items-start gap-3">
               <span className="mt-1 inline-block size-2.5 shrink-0 rounded-full bg-violet-400" />
-              Develop application logic and APIs that connect interfaces to data.
+              APIs, integrations, authentication, and application data flows.
             </li>
 
             <li className="flex items-start gap-3">
               <span className="mt-1 inline-block size-2.5 shrink-0 rounded-full bg-violet-400" />
-              Turn complex ideas into maintainable, practical software.
+              Developer tools and browser-based debugging experiences.
             </li>
 
             <li className="flex items-start gap-3">
               <span className="mt-1 inline-block size-2.5 shrink-0 rounded-full bg-violet-400" />
-              Continuously explore the systems, tools, and technologies behind modern applications.
+              Automation and bot-driven workflows for online communities.
             </li>
           </ul>
         </div>
@@ -171,7 +174,7 @@ export default function Home() {
             </p>
 
             <h2 className="mt-3 text-3xl font-bold text-white">
-              Projects that show how I build.
+              Shipped software, not placeholder projects.
             </h2>
           </div>
 
@@ -183,24 +186,90 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="rounded-3xl border border-dashed border-white/10 bg-white/[0.02] p-8 text-center">
-          <p className="text-lg font-semibold text-white">
-            Projects coming soon.
-          </p>
+        <article className="overflow-hidden rounded-[2rem] border border-white/10 bg-slate-900/60 shadow-2xl shadow-slate-950/30">
+          <div className="grid lg:grid-cols-[0.9fr_1.1fr]">
+            <div className="relative min-h-80 overflow-hidden border-b border-white/10 bg-slate-950 p-8 lg:border-b-0 lg:border-r">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(139,92,246,0.28),transparent_48%),radial-gradient(circle_at_bottom_right,rgba(34,211,238,0.18),transparent_45%)]" />
+              <div className="relative flex h-full min-h-64 flex-col justify-between">
+                <div className="flex flex-wrap gap-2">
+                  <span className="rounded-full border border-emerald-400/25 bg-emerald-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.15em] text-emerald-300">
+                    Published
+                  </span>
+                  <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold uppercase tracking-[0.15em] text-slate-300">
+                    Open Source
+                  </span>
+                </div>
 
-          <p className="mx-auto mt-2 max-w-xl text-slate-400">
-            I’m currently building a collection of projects that demonstrate
-            my approach to frontend development, APIs, application architecture,
-            and full-stack development.
-          </p>
+                <div>
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
+                    Chrome DevTools Extension
+                  </p>
+                  <p className="mt-3 text-4xl font-black tracking-tight text-white sm:text-5xl">
+                    Blackbox
+                  </p>
+                  <p className="mt-3 max-w-md text-sm leading-6 text-slate-400">
+                    A visual API debugger built to make network behavior easier
+                    to inspect, understand, and explain.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-          <Link
-            href="/projects"
-            className="mt-5 inline-block text-sm font-semibold text-violet-300 hover:text-violet-200"
-          >
-            Explore the projects page →
-          </Link>
-        </div>
+            <div className="p-8 md:p-10">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-violet-300">
+                Blackbox API Visualizer
+              </p>
+              <h3 className="mt-3 text-3xl font-bold text-white">
+                Turning raw network traffic into useful debugging context.
+              </h3>
+              <p className="mt-5 leading-7 text-slate-300">
+                Blackbox captures network activity directly from Chrome DevTools
+                and organizes it into request inspection, diagnostics, session
+                insights, response exploration, and an interactive page-to-domain-to-endpoint graph.
+              </p>
+
+              <div className="mt-6 grid gap-3 sm:grid-cols-3">
+                <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
+                  <p className="text-sm font-semibold text-white">Network diagnostics</p>
+                  <p className="mt-1 text-xs leading-5 text-slate-400">
+                    Inspect failures, timing, payloads, and request context.
+                  </p>
+                </div>
+                <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
+                  <p className="text-sm font-semibold text-white">Session insights</p>
+                  <p className="mt-1 text-xs leading-5 text-slate-400">
+                    Surface repeated errors, polling, duplicates, and noisy endpoints.
+                  </p>
+                </div>
+                <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
+                  <p className="text-sm font-semibold text-white">Visual relationships</p>
+                  <p className="mt-1 text-xs leading-5 text-slate-400">
+                    Explore how pages, domains, and endpoints connect.
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-7 flex flex-wrap gap-3">
+                <a
+                  href={chromeStoreUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-full bg-violet-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-violet-400"
+                >
+                  View live extension ↗
+                </a>
+                <a
+                  href={blackboxGitHubUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-slate-200 transition hover:border-cyan-300/40 hover:text-white"
+                >
+                  GitHub & contributions ↗
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
       </section>
     </div>
   );

@@ -4,8 +4,9 @@ import Header from "./layout/header";
 import Footer from "./layout/footer";
 
 export const metadata: Metadata = {
-  title: "Portfolio-Andrew Gomes",
-  description: "A portfolio website built with Next.js and Tailwind CSS.",
+  title: "Andrew Gomes | Full-Stack Software Developer",
+  description:
+    "Portfolio of Andrew Gomes, a full-stack software developer building web applications, developer tools, APIs, integrations, and automation.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -21,4 +22,3 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     </html>
   );
 }
-
